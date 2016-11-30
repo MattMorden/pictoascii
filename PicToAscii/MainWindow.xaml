@@ -1,0 +1,18 @@
+﻿<Window x:Class="PicToAscii.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PicToAscii"
+        mc:Ignorable="d"
+        Title="Matt Morden's Picture To ASCII" Height="350" Width="525" MaxWidth="525" MinWidth="525" MaxHeight="350" MinHeight="350">
+    <Grid>
+        <Button x:Name="btnOpen" Content="Open File" HorizontalAlignment="Left" Margin="407,26,0,0" VerticalAlignment="Top" Width="80" Height="29" Click="btnOpen_Click"/>
+        <Label x:Name="label" Content="File" HorizontalAlignment="Left" Margin="10,19,0,0" VerticalAlignment="Top" Height="36" Width="38"/>
+        <TextBox x:Name="filePathTextBox" HorizontalAlignment="Left" Height="95" Margin="120,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263" IsReadOnly="True"/>
+        <Button x:Name="btnGenerate" Content="Generate Ascii Pic" HorizontalAlignment="Left" Height="47" Margin="174,221,0,0" VerticalAlignment="Top" Width="182" Click="btnGenerate_Click"/>
+        <Label x:Name="label2" Content="Output Width" HorizontalAlignment="Left" Height="33" Margin="10,143,0,0" VerticalAlignment="Top" Width="91"/>
+        <TextBox x:Name="textBoxWidth" HorizontalAlignment="Left" Height="33" Margin="120,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
+
+    </Grid>
+</Window>
